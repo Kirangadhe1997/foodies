@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100;1,500&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.active {
+    background-color: #A82C48;
+    padding: 1rem;
+    color: white;
+
+}
+#buttons{
+display: flex;
+gap: 2rem;    
+
+}
+
+.sticky {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 1px 1px 7px 1px rgb(180, 180, 180);
+    background-color: white;
+    z-index: 1;
+}
+
+.navigation img {
+    margin-left: 3rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.navigation ul {
+    font-weight: 400;
+    font-size: 15;
+    display: flex;
+    gap: 3rem;
+    padding-top: 2.5rem;
+    margin-right: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.navigation .active a {
+    color: white;
+}
+
+.navigation a {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #43121d;
+    letter-spacing: 1px;
+}
+
+.navigation ul li a:hover {
+    color: blue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: justify;
+    margin-top: 4rem;
+    background-color: white;
+
+}
+
+.second h4 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: #43121d;
+    margin-left: 7rem;
+    margin-top: 6rem;
+    font-family: 'Roboto', sans-serif;
+    width: 424px;
+
+}
+
+.second p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 7rem;
+}
+
+.block {
+    display: flex;
+    gap: 13rem;
+    margin-left: -9rem;
+    margin-top: 4rem;
+    box-sizing: border-box;
+    padding: 2.5rem 0rem 7rem 139.5px;
+    background-color: #A82C48;
+    text-decoration: color-#fffff;
+}
+
+.beuty {
+    display: flex;
+    gap: 3rem;
+    margin-left: 8rem;
+}
+
+.moon p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+
+}
+
+.moon h3 {
+    color: #43121d;
+    font-weight: 800;
+    font-size: 30px;
+    padding-top: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.one h3 {
+    color: white;
+}
+
+.one span {
+    font-size: 30px;
+}
+
+.star img {
+    border-radius: 20px;
+    margin-top: 7rem;
+
+}
+
+.button {
+    display: flex;
+    gap: 1rem;
+    padding: 0rem 0rem 0rem 7rem;
+}
+
+.mainbtn {
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: #A82C48;
+    border: #A82C48;
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+.mainbtn:hover {
+    background-color: transparent;
+    border: 1px solid#A82C48;
+    color: #43121d;
+    transition: 0.5s;
+    padding: 0.625rem 1.875rem;
+
+}
+
+.subbtn {
+    border: none;
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: white;
+    color: #A82C48;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    transition: 0.5s;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%)
+}
+
+.subbtn:hover {
+    border: 2px solid #A82C48;
+    color: #A82C48;
+    transition: 0.5s;
+}
+
+.control {
+    display: flex;
+    gap: none;
+    margin-left: 3rem;
+    padding: 4rem 1rem 1rem 4rem;
+}
+
+.pan h3 {
+    color: #43121d;
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    print-color-adjust: 2rem;
+    line-height: 3rem;
+}
+
+.pan p {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chock {
+    vertical-align: middle;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pan li::before {
+    content: "\2713";
+    color: #A82C48;
+    font-weight: 400;
+    padding-right: 1rem;
+}
+
+.coco h3 {
+    text-align: center;
+    color: #A82C48;
+    font-weight: 800;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.coco p {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.ice {
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: #A82C48;
+    border: #A82C48;
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+
+.coco {
+    background: url(picture.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 5rem;
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    background-attachment: fixed;
+}
+
+.notebook {
+    text-align: center;
+    padding: 4rem 0rem 0rem 1rem;
+    margin-top: 6rem;
+}
+
+.notebook h3 {
+    color: #43121d;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.notebook p {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-break: 1px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.paper {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 7rem 4rem 7rem;
+}
+.paper img{
+    border-radius: 20px
+}
+.watch h3{
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 1.40rem;
+}
+.watch p{
+    padding: 0rem 0rem 1rem 0rem;
+}
+.watch span{
+    font-size: 20px;
+    color: #A82C48;
+}
+.good{
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: #A82C48;
+    border: #A82C48;
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: 0.5s;
+    margin: 1rem 0rem 3rem 0rem;
+}
+.tiffin{
+    display: flex;
+    gap: 2rem;
+    margin: 0rem 3rem 3rem 4rem;
+    padding: 0rem 2rem 2rem 4rem;
+}
+.spoon{
+    text-align: center;
+    padding: 4rem 0rem 4rem 0rem ;
+
+}
+
+.clock{
+display: flex;
+    gap: 4rem;
+    padding: 6rem 3rem 6rem 6rem;
+    margin: 5rem 1rem 6rem 0rem;
+}
+.clock{
+    background: url(robo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3rem;
+    text-align: center;
+    width: 100%;
+    height: 60%;
+    background-attachment: fixed;
+    opacity: 0.8;
+
+}
+.clock h2{
+    color: white;
+    font-weight: 600;
+    font-size: 35px;
+}
+.milk h2{
+    text-align: center;
+    color: #43121d;
+    font-weight: 600;
+    font-size: 35;
+    margin-top: 4rem 0rem 4rem 0rem;
+}
+.milk p{
+    text-align: center;
+    font-weight: 400;
+    word-spacing: 2px;
+
+}
+.great{
+    display: flex;
+    justify-items: center;
+    gap: 1rem;
+    align-items: ;
+    margin: 1rem 3rem 4rem 1rem;
+    padding: 1rem 4rem 1rem 28rem;
+}
+
+
+.email{
+    display: flex;
+    align-items: center;
+    -webkit-flow-into: 2rem;
+    font-size: 24px;
+    border: 2px solid #808080;
+    padding: 3px;
+    margin-left: -20rem;
+}
+ .footer{
+    color: white;
+    background-color: #A82C48;
+    box-sizing: none;
+    padding-bottom: 0;
+}
+.ring{
+    display: flex;
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-left: 0rem;
+    font-size: 20px;
+
+}
+.book{
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-left: 0; 
+    font-size: 20px;   
+   
+}
+.footer p{
+    padding-top: 2rem;
+    padding-left: 31rem;
+    padding-bottom: 6rem;
+    letter-spacing: 1px;
+    
+}
